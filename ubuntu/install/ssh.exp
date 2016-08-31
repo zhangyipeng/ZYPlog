@@ -1,0 +1,14 @@
+#!/usr/bin/expect -f
+#在ubuntu16.04系统中执行使用expect指令，同时根据回馈修改部分内容
+	set port	27613
+	set ip		45.78.61.189
+	set password	giQf2Z5suQDX
+	set timeout -1
+	spawn sudo ssh -p $port $ip
+	expect		"*zhangyipeng 的密码："
+	send		"1121\r"
+#	expect		"yes/no"
+#	send		"yes\r"
+	expect		"*password:"
+	send		"$password\r"
+	interact
