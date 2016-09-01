@@ -126,7 +126,14 @@ nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR> "跳转到�
 let g:ycm_error_symbol = '>>'
 let g:ycm_warning_symbol = '>*'
 nmap <F4> :YcmDiags<CR>     "显示警告和错误信息
+"let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
+"Do not ask when starting vim
+let g:ycm_confirm_extra_conf = 0
+"let g:syntastic_always_populate_loc_list = 1
+""当安装了syntastic插件后可以启动语法检查
 "===================================
 "filetype on
 "filetype plugin on
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
+"change the Comment Color in VIM
+hi Comment ctermfg=6;
