@@ -13,6 +13,7 @@ sudo apt install expect -y                  # expect interpreter
 sudo apt install vim vim-gtk vim-doc -y     # VIM
 sudo apt install git-core -y                # GIT
 sudo apt install build-essential cmake -y   # compiler environment
+sudo apt install exfat-fuse -y              # exfat disk dirve 
 # ------------------------------------------- change ls colors in solarized themes
 mkdir ~/.dircolors-solarized/
 cd ~/.dircolors-solarized/
